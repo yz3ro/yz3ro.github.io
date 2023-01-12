@@ -1,0 +1,272 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1A120B;
+}
+.enarka
+{
+    width: 100%;
+    background-color: #E5E5CB;
+    margin-bottom:0 auto;
+    padding-bottom:0px;
+}
+.icerik{
+    padding-bottom: 45px;
+    margin: auto;
+    background-color: #D5CEA3;
+    width: 1200px;
+}
+.ust{
+    width: 100%;
+    background-color: #1A120B;
+    height:150px;
+    margin-bottom: 10px;
+}
+.alt{
+    
+    padding-bottom:90px;
+    width: 100%;
+    display: inherit;
+    background: #1A120B;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/*logo*/
+#logo{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+/*kayanyazi*/
+.serit{
+    margin-bottom: 10px;
+    height: 50px;
+    background-color: #3C2A21;
+}
+.kayanyazi {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.kayanyazi span {
+    font-family: helvetica;
+    font-size: 20px;
+    margin-top: 17px;
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 25s linear infinite;
+}
+.kayanyazi span:hover {
+    animation-play-state: paused
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+/*MENÜ*/
+.ust > ul {
+    list-style-type: none;
+    font-size: 50px;
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+}
+
+.ust > ul > li {
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 100px;
+    margin-bottom: 101px;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.ust > ul > li > a {
+    
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    padding:5px;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.ust > ul > li[data-dropdown] > a::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    transition: 300ms all;
+    display: inline-block;
+}
+
+.ust ul .acilir {
+    list-style-type: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    padding-top: 5px;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 300ms all;
+}
+
+.ust ul .acilir::before {
+    content: '';
+    border: 8px solid transparent;
+    list-style-type: none;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -12px;
+}
+
+.ust ul .acilir ul {
+    list-style-type: none;
+    background-color:#1A120B;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.ust ul .acilir ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 34px;
+    padding: 0 20px;
+    border-radius: 34px;
+    color: rgb(255, 255, 255);
+}
+
+.ust ul .acilir ul li {
+    position: relative;
+    padding: 0 7px;
+}
+
+.ust ul .acilir ul li:hover > a {
+    
+    color:#D5CEA3 ;
+}
+
+.ust > ul > li:hover > a::after {
+    transform: rotate(180deg);
+}
+.ust > ul > li:hover > a + .acilir {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.ust ul .acilir .acilir {
+    left: 190px;
+    top: 0;
+    padding-left: 20px;
+    margin-left: 0;
+    padding-top: 0;
+}
+
+.ust ul .acilir ul li:hover > .acilir {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    color: rgb(109, 114, 109);
+}
+
+.ust ul .acilir .acilir::before {
+    border-bottom-color: transparent;
+    border-right-color: #f5f5f5;
+    top: 10px;
+    left: 4px;
+    margin-left: 0;
+}
+.ust ul .acilir li[data-dropdown]:hover > a::after {
+    transform: rotate(-180deg);
+}
+.ust ul li a:hover{
+    color: #D5CEA3;
+    transition:color .5s ease-in;
+}
+
+/*ÜYE*/
+.uye{
+    
+    background-color: #1A120B;
+    width: 235px;
+    height: 75px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.uye a{
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+.uye a:hover{
+    color:rgb(109, 114, 109) ;
+    transition:color .5s ease-in;
+}
+/*SOSYAL*/
+.sosyal{
+    float: right;
+    margin-top: 37px;
+}
+.sosyal i{
+    
+    font-size: 25px;
+    padding: 10px;
+}
+/*İÇERİK*/
+.icerik h1{
+    color: #E5E5CB;
+    font-size: 40px;
+    text-align: center;
+    background-color: #3C2A21;
+}
+h2{
+    color: #E5E5CB;
+    background-color: #3C2A21;
+    font-size: 25px;
+    text-align: center;
+}
+.icerik p,dd,dt {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+
+}
+.icerik .img{
+    margin-left: 200px;
+   
+    width: 800px;
+}
+hr{
+    opacity: 0;
+    background-color: #1A120B;
+}
+
+
+
+
